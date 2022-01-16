@@ -1,15 +1,11 @@
-import { useState } from 'react'
-import logo from './logo.svg'
-import './App.css'
-import {MyRoutes} from './router/index'
+import { useState } from "react";
+import logo from "./logo.svg";
+import "./App.css";
+import { Outlet, Link, useRoutes, useParams } from "react-router-dom";
+import routes from "./router";
 function App() {
-  const [count, setCount] = useState(0)
-
-  return (
-    <div className="App">
-     <MyRoutes/>
-    </div>
-  )
+  let element = useRoutes(routes);
+  return <div className="App">{element}</div>;
 }
 
-export default App
+export default App;
