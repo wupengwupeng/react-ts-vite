@@ -15,7 +15,7 @@ interface TabPanelProps {
 
 function TabPanel(props: TabPanelProps) {
     const { children, value, index, ...other } = props;
-    // console.log(props);
+    console.log(props);
 
     return (
         <div
@@ -27,7 +27,7 @@ function TabPanel(props: TabPanelProps) {
         >
             {value === index && (
                 <Box sx={{ p: 3 }}>
-                    <Typography component={'div'} variant={'body2'}>{children}</Typography>
+                    <Typography component={'span'} variant={'body2'}>{children}</Typography>
                 </Box>
             )}
         </div>
