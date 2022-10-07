@@ -8,7 +8,6 @@ export function Home() {
   const childRef: any = useRef();
   const cdRef: any = useRef();
   const innerRef: any = useRef();
-  const source = "大家好我是你爹爹，请叫我爹爹我是你的爸爸哦";
   const emit = (val: any) => {
     console.log(val);
   };
@@ -36,9 +35,6 @@ export function Home() {
       <ChildRef forwardRef={cdRef} innerRef={innerRef}></ChildRef>
       <button onClick={openChildFun}>父组件调用子组件的方法</button>
       <button onClick={handerTest}>测试2</button>
-      <div className="typing-card">
-        <TypingCard source={source}></TypingCard>
-      </div>
     </div>
   );
 }

@@ -36,7 +36,7 @@ export function Home() {
       <ChildRef forwardRef={cdRef} innerRef={innerRef}></ChildRef>
       <button onClick={openChildFun}>父组件调用子组件的方法</button>
       <button onClick={handerTest}>测试2</button>
-      <div className="typing-card">
+      <div class="typing-card">
         <TypingCard source={source}></TypingCard>
       </div>
     </div>

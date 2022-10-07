@@ -40,9 +40,3 @@
 button {
   font-size: calc(10px + 2vmin);
 }
-
-.typing-card {
-  width: 400px;
-  height: 30px;
-  background: red;
-}
